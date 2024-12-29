@@ -13,6 +13,7 @@
 	console.log(metric);
 
 	const { data } = $props();
+	console.log(data.activities);
 </script>
 
 <div class="w-full p-4">
@@ -27,7 +28,6 @@
 		<div class="flex items-center gap-2 rounded border p-1">
 			<form method="POST" use:enhance>
 				{activity.name}
-				<Button onclick />
 				<input class="hidden" type="number" name="id" value={activity.id} />
 				<input class="hidden" name="type" type="text" value={metric} />
 				<input type="number" name="value" value={activity[metric]} />

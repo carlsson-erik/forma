@@ -1,0 +1,1 @@
+ALTER TABLE "activites" ADD COLUMN "grade" integer NOT NULL;

@@ -1,5 +1,5 @@
 import { relations } from 'drizzle-orm';
-import { integer, pgTable, varchar, foreignKey } from 'drizzle-orm/pg-core';
+import { integer, pgTable, varchar } from 'drizzle-orm/pg-core';
 
 export const usersTable = pgTable('users', {
 	id: integer().primaryKey().generatedAlwaysAsIdentity(),
@@ -12,10 +12,11 @@ export const activitiesTable = pgTable('activites', {
 	id: integer().primaryKey().generatedAlwaysAsIdentity(),
 	userId: integer('user_id'),
 	name: varchar({ length: 255 }).notNull(),
-	threshold: integer().default(0),
-	dopamine: integer().default(0),
-	social: integer().default(0),
-	accomplishment: integer().default(0)
+	threshold: integer().default(0).notNull(),
+	dopamine: integer().default(0).notNull(),
+	social: integer().default(0).notNull(),
+	accomplishment: integer().default(0).notNull(),
+	grade: integer().notNull()
 });
 
 export const userRelations = relations(usersTable, ({ many }) => ({

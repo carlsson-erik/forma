@@ -8,6 +8,20 @@
       "when": 1732213656566,
       "tag": "0000_confused_enchantress",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1734185809649,
+      "tag": "0001_volatile_lizard",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1734186076204,
+      "tag": "0002_marvelous_machine_man",
+      "breakpoints": true
     }
   ]
 }
