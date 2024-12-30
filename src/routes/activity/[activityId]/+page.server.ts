@@ -46,6 +46,10 @@ export const load: PageServerLoad = async ({ params }) => {
 
 	return {
 		activity: activityResult[0],
-		suggestion: JSON.parse(msg.content.toString())
+		suggestion: JSON.parse(
+			msg.content[0].type === 'text'
+				? msg.content[0].text
+				: '{"name" : "no contenten", reason: "No text response"}'
+		)
 	};
 };
