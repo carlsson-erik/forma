@@ -5,6 +5,6 @@
 	let { children, class: className, ...props }: HTMLButtonAttributes = $props();
 </script>
 
-<button class={'rounded border border-green-400 bg-green-500 px-2 py-1 ' + className} {...props}>
+<button class={'rounded-xl border border-green-400 bg-green-500 px-2 py-2 ' + className} {...props}>
 	{@render children?.()}
 </button>

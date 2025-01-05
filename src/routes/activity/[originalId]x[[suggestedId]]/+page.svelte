@@ -13,7 +13,7 @@
 	let formType: ActivityType | undefined = $state(undefined);
 </script>
 
-<div class="h-screen w-screen overflow-hidden bg-gray-400">
+<div class="h-screen w-screen overflow-hidden">
 	<div class="my-24 flex flex-col items-center gap-12">
 		<div class="flex flex-1">
 			You have chosen {data.activity.name}
